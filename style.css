@@ -1,0 +1,80 @@
+*{  
+    margin: 0;
+    padding: 0;
+}  
+video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 800px;
+    filter: blur(5px);
+    z-index:-11
+}
+canvas {
+    padding:0;
+    margin:0;
+}
+.myclass{
+    letter-spacing:5px;
+    color: red;
+    font-weight:bold;
+    font-size:46px;
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100%{opacity: 0;} 
+}
+.blink{
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    animation: blink 1s linear infinite;
+}
+@font-face {
+    font-family: 'HYWenHei-85W';
+    src: url("fonts/truetype.ttf");
+}
+h1{
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  font-family: 'HYWenHei-85W', serif;
+  src: url("fonts/truetype.ttf");
+  font-size: 100px;
+  color:rgb(255, 50, 0);
+  padding: 0 20px;
+}
+h1 div{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 70px;
+    color:rgb(255, 150, 0);
+}
+h1 span{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+      font-size: 50px;
+      color:rgb(0, 40, 255);
+}
+body{
+    overflow: hidden;
+    margin: 0;
+}
