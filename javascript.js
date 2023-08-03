@@ -30,7 +30,7 @@ if (getURLParameter("pic_bg") != undefined) {
     document.body.style.backgroundSize = "100% 100%"
     document.body.style.backgroundAttachment = "fixed"
 }
-if (getURLParameter("no_ms") == "t") {
+if (getURLParameter("clear_mode") == "t") {
     document.getElementById("v1").src = "";
     document.getElementById("a1").src = "";
     document.body.style.background = ""
