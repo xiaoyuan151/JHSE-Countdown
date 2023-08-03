@@ -35,12 +35,12 @@ if (getURLParameter("clear_mode") == "t") {
     document.getElementById("a1").src = "";
     document.body.style.background = ""
 }
+
 window.onload = function starttime() {
     let h1 = document.getElementById('h1')
     time(h1, '2024/6/25');
     setTimeout(starttime, 1);
 }
-
 function time(obj, futimg) {
     let html;
     const nowtime = new Date().getTime();
