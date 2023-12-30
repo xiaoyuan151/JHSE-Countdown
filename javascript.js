@@ -41,6 +41,7 @@ window.onload = function starttime() {
     time(h1, '2024/6/25');
     setTimeout(starttime, 1);
 }
+
 function time(obj, futimg) {
     let html;
     const nowtime = new Date().getTime();
